@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Initialize SmartShop Database",
+			"type": "shell",
+			"command": "sqlite3",
+			"args": [
+				"database/smartshop.db",
+				".read database/setup_database.sql"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"isBackground": false
+		}
+	]
+}
